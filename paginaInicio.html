@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción breve de la página">
+    <meta name="author" content="Tu nombre o el de tu equipo">
+    <title>Bell Dermoestética | Cuidado Facial & Estético</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- Enlace de la libreria AOS JS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Enlace de letra de googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+<body >
+    <header id="fondoLogo" >
+        
+              <img src="Desarrollo UX/logo_bell.jpg" alt="Logo de la empresa" id="logo"  width="100" height="100">
+         
+         <div class="menu">
+            <nav  >
+                <ul>
+                    <li><a href="##" class="activo"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="##"><i class="fa-solid fa-pump-medical"></i>Servicio</a></li>
+                    <li><a href="##"><i class="fa-solid fa-heart"></i>Nosotros</a></li>
+                    <li><a href="##"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+                </ul>
+            
+            </nav>
+         </div>
+         <a href="https://wa.me/51972468510" id="botonWhat" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png"/>
+            Reservar por WhatsApp
+          </a>
+    </header>
+    <main >
+    
+         <!--   CARRUSELL CODIGO DEL BOOTSTRAP-->
+         <div class="container-fluid p-0">
+            <div id="carrusel" class="carousel slide w-100" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+          
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <video autoplay muted loop class="w-100 overlay-dark">
+                    <source src="Desarrollo UX/Videos Carrucel/Pruev.mp4" type="video/mp4">
+                  </video>
+                  <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="1100">
+                    <h5>Belleza con Propósito</h5>
+                    <p>Descubre nuestros tratamientos personalizados para cuidar tu piel como se merece.</p>
+                  </div>
+                </div>
+          
+          
+                <div class="carousel-item">
+                  <video autoplay muted loop class="w-100">
+                    <source src="Desarrollo UX/Videos Carrucel/Pruev2.mp4" type="video/mp4">
+                  </video>
+                  <div class="overlay-dark"></div>
+                  <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="1100">
+                    <h5>Naturalmente radiante</h5>
+                    <p>Productos dermatológicos seguros y resultados visibles desde la primera sesión.</p>
+                  </div>
+                </div>
+          
+                <div class="carousel-item">
+                  <video autoplay muted loop class="w-100">
+                    <source src="Desarrollo UX/Videos Carrucel/Pruev6.mp4" type="video/mp4">
+                  </video>
+                  <div class="overlay-dark"></div>
+                  <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="1100">
+                    <h5>Agenda tu Cita Hoy</h5>
+                    <p>Con tecnología avanzada y especialistas comprometidos con tu piel.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+            <!-- Fin del carrusel -->
+             <div class="transicion"></div>
+     <div>
+        <section id="servicios">
+          <h2><i class="fa-solid fa-sun"></i>Servicios Destacados</h2>
+            <div class="tarjeta-servicios">  
+                 <div class="tarjeta-servicio">
+                    <div class="contenido-tarjeta">
+                         <div class="caraDelante">
+                         <div class="etiqueta-circular">Luce Más Hermosa</div>
+                          <img src="Desarrollo UX/Limpieza Facial/limpiezaFacial.png" alt="imagen_Limpieza" width="200">
+                          <h4 data-aos="fade-up" data-aos-duration="1200">Limpieza Facial Profunda</h4>
+                          <i class="fa-solid fa-arrow-right"></i>
+                         </div>
+                         <div class="caraDetras">
+                               <h5>Beneficios</h5>
+                             <ul>
+                              <li>Elimina Impurezas y células muertas de la piel, dejando un rostro fresco y radiante.</li>
+                              <li>Estimula la circulación sanguínea y mejora la oxigenación de la piel.</li>
+                              <li>Ayuda a prevenir el acné y otros problemas cutáneos.</li>
+                             </ul>
+                             <a href="https://wa.me/51972468510" target="_blank">Reservar</a>
+                          </div>
+                     </div>
+                 </div>
+
+                 <div class="tarjeta-servicio">
+                  <div class="contenido-tarjeta">
+                        <div class="caraDelante">
+                          <div class="etiqueta-circular">Preventivo</div>
+                           <img src="Desarrollo UX/Baby Botox/BabeBotox.png" alt="imagen_BabyBotox" width="200">
+                           <h4 data-aos="fade-up" data-aos-duration="1200"> Baby Botox</h4>
+                           <i class="fa-solid fa-arrow-right"></i>
+                        </div> 
+                        <div class="caraDetras">
+                          <h5>Beneficios</h5>
+                            <ul>
+                              <li>Previene la formación de arrugas y líneas de expresión.</li>
+                              <li>Proporciona un aspecto fresco y juvenil.</li>
+                              <li>Resultados sutiles y naturales.</li>
+                            </ul>
+                        <a href="https://wa.me/51972468510" target="_blank">Reservar</a>
+                        </div>
+                     </div>   
+                 </div>
+
+                 <div class="tarjeta-servicio">
+                  <div class ="contenido-tarjeta">
+                         <div class="caraDelante">
+                               <div class="etiqueta-circular">Maxima Juventud</div>
+                                <img src="Desarrollo UX/Plasma Plaquetas/PlasmaPlaquetas.png" alt="Plasma-Rico-en-Plaquetas" width="200">
+                                <h4 data-aos="fade-up" data-aos-duration="1200">Plasma Rico en Plaquetas</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                         </div>
+                         <div class="caraDetras">
+                          <h5>Beneficios</h5>
+                                 <ul>
+                                    <li>Estimula la regeneración celular y mejora la textura de la piel.</li>
+                                    <li>Reduce arrugas y líneas de expresión.</li>
+                                    <li>Proporciona un aspecto más joven y saludable.</li>
+                                 </ul>
+                                 <a href="https://wa.me/51972468510" target="_blank">Reservar</a>
+                         </div>
+                  </div>    
+                              
+                 </div>
+             </div>
+             <div class="btns-serv">
+              <a href="#"><i class="fa-solid fa-pump-medical"></i>Conoce Más Servicios</a>
+              <a href="#"><i class="fa-solid fa-calendar-days"></i>Reservar Cita</a>
+             </div>
+         </section>
+    
+         <section id="Reseñas-Clientes">
+            <h2><i class="fa-solid fa-star"></i>Reseñas Clientes</h2>
+            <div class="tarjeta-reseñas">
+              <div class="borde-animado">
+                <div class="reseña">
+                   <div class = "contenido-reseña" data-aos="fade-up" data-aos-duration="1000">
+                    <p >"Estaba insegura por mis manchas, pero desde que empecé mis tratamientos en Bell, no solo mejoró
+                      mi piel...¡también mi autoestima! Eternamente agradecida."</p>
+                      <p>-María Fernanda Q., 35 años</p>
+                    <div class="corazonReseña">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                         <!-- 5 estrellas -->
+                      </div>
+                   </div>              
+                </div>
+            </div> 
+
+              <div class="borde-animado">  
+                <div class="reseña">
+                  <div class = "contenido-reseña" data-aos="fade-up" data-aos-duration="1000">
+                    <p>"El servicio fue muy bueno, me gustó mucho la limpieza facial. El lugar es súper limpio y relajante.
+                      Solo me hubiese gustado un poco más de detalle al explicar el tratamiento pero igual volveria sin
+                      dudarlo."</p>
+                  <p>-Sofia M., 33 años</p>
+                  <div class="corazonReseña">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                     <!-- 4 estrellas -->
+                  </div>   
+                  </div> 
+                </div>
+              </div> 
+
+              <div class="borde-animado">
+                <div class="reseña">
+                  <div class="contenido-reseña" data-aos="fade-up" data-aos-duration="1000">
+                    <p>"Fui por recomendación de una amiga y fue la mejora decisión. Me hicieron una limpieza profunda y mi
+                      piel nunca se sintió tan fresca. El personal es muy amable y profesional."</p>
+                  <p>-Gabriela P., 26 años</p>
+                  <div class="corazonReseña">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <!-- 5 estrellas -->
+                  </div>
+                  </div> 
+                </div>
+            </div>  
+            </div>  
+            <div class="btns-serv">
+              <a href="#" class="btn-exp"><i class="fa-regular fa-comments"></i>Cuentanos Tú Experiencia</a>
+              <a href="#" class="btn-reser"><i class="fa-solid fa-calendar-days"></i>Reserva tú cita</a>
+            </div>
+          
+         </section>
+     </div>
+
+    </main>
+
+    <footer id="pie-pg">
+       <div> 
+            <div class="redes-sociales">
+                <img src="Desarrollo UX/logo_bell.jpg" alt="Logo de la empresa" class="logo" width="100" height="100">
+                   <h3>Siguenos</h3>
+                   <a href="##" class="btn-face"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="##" class="btn-insta"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="##" class="btn-youtu"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="enlaces">
+                <h4>other</h4>
+                <nav>
+                    <ul>
+                        <li> <a href="##">Libro Reclamaciones</a></li>
+                        <li> <a href="##">Terminos y Condiciones</a></li>
+                        <li> <a href="##">Politicas de Privacidad</a></li>
+                        <li> <a href="##">Información Empresa</a></li>
+                        <li> <a href="##">Desarrolladores</a></li>
+                    </ul>
+                </nav>        
+                <p>Copyright &copy; BELL Dermoestética</p>
+            </div>
+            <div class="metodos-pago">
+                    <h3>Metodos de Pago</h3>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-solid fa-money-bill"></i>
+            </div>
+            <div class="map-ubication">
+                <h4>Ubicación</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.177762617559!2d-76.99405022508945!3d-12.168297944175166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9a6ac20c69d%3A0xd8e886c7bfa32c64!2sBell%20Dermoest%C3%A9tica!5e0!3m2!1ses!2spe!4v1746771517615!5m2!1ses!2spe" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            </div>
+               <a href="##" class="btn-contac">Contacto</a>
+       </div>
+    </footer>
+    <!-- Bootstrap JS (necesario para el carrusel) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- ICONO DE WHASTAPP FLOTANTE -->
+<a href="https://wa.me/51972468510" target="_blank" class="btn-wsp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+</body>
+</html>

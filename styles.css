@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /*Estilo de letra de Google Fonts */   
+  .tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .habibi-regular {
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.merriweather-uniquifier{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  font-variation-settings: "wdth" 100; 
+}
+ 
+/*Estilos del logo de la cabecera en el centro */   
+#logo{
+    width: 180px;
+    height: auto;
+    border-radius: 25%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.838);
+    padding: 4px;  
+    position: absolute;
+    top: 20px;
+
+}
+
+#fondoLogo
+{   
+    height: 300px;
+    background-image: url("Desarrollo UX/fondoLogo.jpg");
+    background-size: cover; /*La imagen se escala para cubrir todo el contenedor sin deformarse*/
+    background-repeat: no-repeat; /*Evita que la imagen se repita si es que no llena todo el espacio*/
+    background-position: center 84%; /*Centra la imagen horizontalmente, y la desplaza un poco hacia abajo verticalmente (84% de la altura del div).*/
+    background-color: rgba(0,0,0,0.25);
+    background-blend-mode: darken;
+    display: flex;       /*Usa Flexbox para centrar el contenido vertical y horizontalmente dentro del div.*/
+    align-items: center;
+    justify-content: center;
+    position: relative;;
+    padding-bottom: 125px;
+    box-shadow: 0 0 45px rgb(0, 0, 0);
+    margin-bottom: 1px;/*El margen entre el fondo y el carrusel*/
+   
+}
+/*Estilo de la franja blanca difuminada en el header*/
+
+#fondoLogo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px; /* puedes ajustar esto */
+    background: linear-gradient(to top, rgba(223, 245, 245, 0.873), transparent);
+  }
+  
+/*Estilos de la barra de navegacion de la franja blanca*/
+a.activo
+{
+    border-bottom: 5px solid #fff;
+    font-weight: bold;
+}
+/*Estilos de Logo General*/
+.logo{
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+}
+
+/*Estilo de la barra de navegacion General*/
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(16, 143, 143, 0.26);
+    border-radius: 0px 0px 20px 20px;
+    gap: 30px;
+    list-style: none;
+    margin: 320px 0px  12px 0px;
+    padding: 0px 0px;
+    box-shadow: 0 0 10px rgba(81, 252, 252, 0.632);
+    
+}
+/*Estilo de la barra de navegacion separacion de los elementos de la barra de navegacion*/
+.menu ul li{
+    margin: 0px 54px 0px 70px;
+    padding: 0px 0px;
+    
+}
+/*Estilo de los links de la barra de navegacion*/
+.menu ul li a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    margin: 0px 35px 0px 35px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgb(98, 155, 235);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.551);
+    font-family: "Tagesschrift", system-ui;
+}
+
+/*Estilos de los iconos internos de cada link de la barra de navegacion*/
+
+.menu ul li a i
+{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/*Estilo de cuando pasas el mouse por el link de la barra de navegacion y
+cambia de color*/
+
+.menu ul li a:hover{
+    color: #0034f1;
+    border-bottom: 5px solid #ffffff;
+    font-weight: bold;
+}
+/*Estilo del boton de reserva de whastapp del header*/
+#botonWhat
+{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Tagesschrift", system-ui;
+  font-size: 23px;
+  background-color: rgba(10, 204, 39, 0.558);
+  border-radius: 12px;
+  padding: 8px;
+  position: absolute;
+  right: 28px;
+  box-shadow: 8px 5px rgba(250, 248, 248, 0.5);
+}
+/*animacion del boton de reserva de whastapp del header*/
+#botonWhat:hover
+{
+  background-color: rgba(10, 204, 39, 0.8);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/*Estilo del carrusel ajusta el alto del carrusel*/
+#carrusel video
+{
+    height: 85vh;
+    object-fit: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Color
+    background-color: rgba(0, 0, 0, 0.26); /* Color negro semitransparente */
+    z-index: 1; /* Asegura que el overlay esté sobre el video */
+}
+
+.carousel-item video {
+    position: relative;
+    z-index: 0; /* Asegura que el video esté debajo del overlay */
+}
+
+
+.carousel-caption
+{  font-family:"Habibi", serif; 
+    position: absolute;
+    
+    bottom:auto;
+    top: 250px;      /* Puedes usar top, bottom, left, right para mover */
+    left: 150px;
+    right: auto;
+    transform: translate(0,0);
+    text-align: center;
+   z-index: 2;
+   
+}
+.carousel-caption h5{
+    font-size: 55px;
+ 
+  color: #fff;
+}
+.carousel-caption p
+{   color: #ffffff;
+    font-size: 40px;
+}
+/*Esta es la linea de union entre el carrucel y header*/
+.transicion::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px; /* puedes ajustar esto */
+  background: linear-gradient(to bottom, rgba(223, 245, 245, 0.881), transparent);
+}
+#servicios
+{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Desarrollo UX/fondoService2.jpg");
+  background-position: center 80%;
+  background-blend-mode: darken;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  padding:0;
+}
+/*Esta es la linea que une Servicios y Reseña*/
+#servicios::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px; /* puedes ajustar esto */
+  background: linear-gradient(to top, rgba(223, 245, 245, 0.873), transparent);
+}
+
+#servicios h2
+{
+  font-size: 50px;
+  margin: 30px 0px;
+  font-family: "Tagesschrift", system-ui;
+  color: #fff;
+  margin: 39px 0px;
+}
+#servicios i
+{
+  margin: 0px 10px;
+  color: #fbfafaeb;
+}
+
+.btns-serv
+{
+  margin: 23px 0px;
+}
+
+.btns-serv a
+{
+  text-decoration:none;
+  font-size: 25px;
+  margin: 0px 50px;
+  background-color:rgba(72, 111, 241, 0.616);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 10px #000000;
+  color: #fffcfc;
+  font-weight:bold;
+  font-family:"Habibi", serif; 
+}
+
+
+  .tarjeta-servicios
+{ 
+  margin: 30px 70px 20px 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap : wrap;
+}
+
+.tarjeta-servicio
+{
+  width: 600px;
+  height: 800px;
+  perspective: 1000px;  /*Esto permite la perspectiva 3D y su velocidad de rotacion para que no se vea tan brusco*/
+  margin: 22px 70px 28px 70px; /*Tamaño externo de cada tarjeta y separacion entre ellas*/
+}
+
+.contenido-tarjeta
+{ 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style:preserve-3d;
+  transition: transform 0.6s;
+}
+
+.caraDelante, .caraDetras
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  /* Esto hace que una cara se vea invisible y la otra sea visible y vicebersa*/
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+}
+.caraDelante
+{  
+  padding-top: 150px;
+  background:linear-gradient( to bottom,rgba(28, 120, 141, 0.896) ,rgba(10, 44, 235, 0.303));
+  transform: rotateY(0deg);
+}
+.caraDelante h4
+{
+  color:rgb(246, 243, 243);
+  text-align: center;
+  list-style: 180px;
+  font-size: 35px;
+  font-family: "Merriweather", serif;
+  padding-top: 10px;
+}
+
+.caraDelante img
+{
+  margin: 0px 0px 25px 76px;
+  border-radius: 100px;
+  height: 400px;
+  width: 450px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.903);
+}
+.caraDelante i
+{
+  color:rgb(166, 245, 232);
+  font-size: 39px;
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  margin: 65px 40px 0px 0px;
+}
+.etiqueta-circular
+{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  background: rgba(70, 177, 187, 0.67);
+  text-align: center; /*Centra el texto de forma horizontal*/
+  line-height: 180px; /*Alinia el texto de forma vertical*/
+  font-weight:bold;
+  box-shadow: 6px 6px rgba(252, 250, 250, 0.723);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  top: -40px;
+  left: -45px;
+  font-family: "Merriweather", serif;
+}
+.caraDetras
+{
+  transform: rotateY(180deg);
+  background-image: url("Desarrollo UX/fondoCard.jpg");
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.caraDetras h5
+{
+  margin-top: 18px;
+  font-size: 45px;
+  font-family:"Habibi", serif; 
+}
+.caraDetras ul
+{
+  background-color: rgba(0, 0, 0, 0.403);
+
+  border-radius: 25px;
+}
+.caraDetras ul li
+{
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  margin: 40px;
+  padding: auto;
+  font-family:"Habibi", serif; 
+}
+.caraDetras a
+{
+    text-decoration:none;
+    font-size: 29px;
+    border-radius: 8px;
+    color: bisque;
+    padding: 5px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.664);
+}
+
+/*Da la vuelta a la tarjeta*/
+.tarjeta-servicio:hover .contenido-tarjeta
+{
+  transform: rotateY(180deg);
+}
+
+
+#Reseñas-Clientes
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Desarrollo UX/fondoReseña.jpg");
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-position: center 80%;
+}
+/*Esta es la Linea que une Reseña y footer*/
+#Reseñas-Clientes::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px; /* puedes ajustar esto */
+  background: linear-gradient(to top, rgba(223, 245, 245, 0.873), transparent);
+}
+#Reseñas-Clientes h2
+{
+  font-size: 50px;
+  margin: 30px 0px;
+  font-family: "Tagesschrift", system-ui;
+  color: #fff;
+  margin: 39px 0px;
+}
+#Reseñas-Clientes i
+{
+  margin: 10px;
+}
+.tarjeta-reseñas
+{
+  display: flex; 
+  flex-direction:row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin:25px;
+  
+}
+.reseña
+{ 
+  background-color: #fff9f951;
+  margin: 50px 30px;
+  text-align: center;
+  padding: 40px;
+  width: 600px;
+  height: auto;
+  min-height: 700px;
+  border-radius: 45px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.contenido-reseña
+{
+  margin: 60px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  padding: 40px 25px;
+  text-align: center;
+  font-family:"Habibi", serif; 
+  
+}
+.corazonReseña
+{
+  display: flex;
+  justify-content: center;
+  color: red;
+  margin-top:20px;
+  font-size: 31px;
+}
+
+#pie-pg
+{
+  background-color: #081441;
+  display: flex;
+  flex-direction: row;
+}
